@@ -385,7 +385,9 @@ address  {
 
 .socials-item {}
 
-.icon {}
+.footer .icon {
+    fill: #fff;
+}
 
 .contacts {}
 
