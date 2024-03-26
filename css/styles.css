@@ -1,0 +1,403 @@
+/* #region Base styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    background-color: #fafafa;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+button {
+    color: currentColor;
+    cursor: pointer;
+    font-family: inherit;
+}
+ul, ol {
+    list-style-type: none;
+}
+address  {
+    font-style: normal;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #endregion */
+
+/* #region Common styles */
+
+/* #region Header */
+
+.header {
+
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+.home {
+    
+}
+.home-link {
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+.home-link-span {
+    font-style: normal;
+}
+.logo {
+
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.socials-item {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* #endregion */
+
+/* #region Hero section */
+.hero-section {
+    background-color: rgba(17, 17, 17, 0.4);
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.clickable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-item {}
+
+.button {
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #fd9222;
+    border: none;
+}
+
+.srcoll-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+.srcoll-down p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.arrow-down {}
+/* #endregion */
+
+/* #region Benefits */
+.section-one {
+    background-color: rgba(30, 24, 35, 1);
+}
+
+.section-one .list {
+    align-items: baseline;
+    gap: 88px;
+}
+
+.section-one .list-item {
+    width: 308px;
+}
+
+.card {}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22222;
+}
+.section-one .card-title { 
+    color: #fff;
+}
+.card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+.section-one .card-text {
+    color: rgba(255, 255, 255, 0.7);
+}
+/* #endregion */
+
+/* #region Ingridients */
+.section-two {}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+}
+.section-two .list {
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.section-two .list-item {
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    width: 260px;
+    height: 270px;
+}
+
+.card {
+
+}
+
+.card-image {
+
+}
+
+.section-two .card-title {
+    margin-top: 36px;
+    margin-bottom: 28px;
+}
+/* #endregion */
+
+/* #region Recipe */
+.section-three {}
+
+.section-title {}
+
+.recipe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.recipe-caption {
+
+}
+.section-image {
+
+}
+
+.list-title {}
+
+.section-three .list {
+    display: inline;
+}
+
+.list-item {}
+/* #endregion */
+
+/* #region Products */
+.section-four {}
+
+.section-title {}
+
+.section-four .list {
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 18px;
+
+}
+
+.section-four .list-item {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 270px;
+    height: 364px;
+    background-color: #fff;
+}
+
+.card {}
+
+.card-image {}
+
+.section-four .card-title {
+    text-align: center;
+}
+
+.section-four .card-text {
+    text-align: center;
+}
+
+.card-button {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    padding: 8px 20px;
+    background-color: #fafafa;
+    font-weight: 600;
+}
+/* #endregion */
+
+/* #region Top sellers */
+.section-five {}
+
+.section-title {}
+
+.section-five .list {
+    gap: 16px;
+}
+
+.list-item {}
+
+.section-five .card {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    width: 368px;
+    height: 544px;
+}
+
+.card-image {}
+
+.section-five .card-title {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-left: 1px solid rgba(17, 17, 17, 0.1);
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 0 0 15px 15px;
+    width: 368px;
+    height: 80px;
+}
+/* #endregion */
+
+/* #region Rewievs */
+.section-six {}
+
+.section-title {}
+
+.section-six .list {
+    gap: 28px;
+}
+
+.section-six .list-item {}
+
+.section-six .card {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 360px;
+    height: 200px;
+    box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
+    background-color: #fff;
+}
+
+.card-image {}
+
+.card-title {}
+
+.card-text {}
+
+.section-six .button {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+}
+/* #endregion */
+
+/* #region Footer */
+.footer {
+    background-color: rgba(30, 24, 35, 1);
+    color: #fff;
+}
+
+.footer .section-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    color: #fff;
+    text-align: left;
+}
+
+.social-networks {}
+
+.footer-text {}
+
+.socials {}
+
+.socials-item {}
+
+.icon {}
+
+.contacts {}
+
+.address {}
+
+.list {}
+
+.contacts-link {}
+
+.footer-nav {}
+
+.nav-link {}
+/* #endregion */
+
+/* #endregion */
