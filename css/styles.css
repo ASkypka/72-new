@@ -1,0 +1,125 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #111;
+    background-color: #fafafa;
+}
+
+.made {}
+
+.made-title {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.accent {
+    color: #fd9222;
+}
+
+.made-pic {}
+
+.made-subtitle {
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.made-list {}
+
+.made-item {}
+
+.made-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.products-title {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products-list {}
+
+.products-item {}
+
+.products-ill {}
+
+.products-subtitle {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.products-text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.products-price {
+    font-size: 14px;
+}
+
+.sellers {}
+
+.sellers-title {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.sellers-list {}
+
+.sellers-item {}
+
+.sellers-ill {}
+
+.sellers-subtitle {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.reviews {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reviews-list {}
+
+.reviews-item {}
+
+.reviews-photo {}
+
+.reviews-author {
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+}
+
+.reviews-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.reviews-btn {
+    font-size: 18px;
+    color: #111;
+}
