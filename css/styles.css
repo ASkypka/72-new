@@ -4,6 +4,40 @@ body {
     background-color: #fafafa;
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1168px;
+    margin: 0 auto;
+    padding: 0 16px;
+    outline: 1px solid red;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .made {}
 
 .made-title {
@@ -12,6 +46,7 @@ body {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .accent {
