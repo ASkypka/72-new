@@ -101,24 +101,29 @@ address {
     gap: 32px;
 }
 
-.section-two .list-item {}
-
-.section-two .card {
-    border: 1px solid #fd9222;
+.section-two .list-item {
+    border: 1px solid transparent;
     border-radius: 15px;
-    width: 260px;
+    width: calc((100% - 96px) / 4);
     padding: 28px 23px;
 }
 
-.section-two .card-orange {
-    border: transparent;
+.section-two .list-item:nth-child(4n + 1) {
+    color: #fff;
     background-color: #fd9222;
 }
 
-.section-two .card-dark {
-    border: transparent;
-    background-color: #1e1823;
+.section-two .list-item:nth-child(2n + 2) {
+    color: #111;
+    background-color: #fff;
+    border-color: #fd9222;
 }
+
+.section-two .list-item:nth-child(4n + 3) {
+    color: #fff;
+    background-color: rgba(30, 24, 35, 1);
+}
+
 
 .section-two .card-image {
     display: block;
@@ -133,8 +138,5 @@ address {
     margin-top: 36px;
 }
 
-.section-two .card-title-white {
-    color: #fff;
-}
 
 /* #endregion */
