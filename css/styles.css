@@ -215,7 +215,7 @@ address  {
     gap: 14px;
 }
 
-.srcoll-down p {
+.srcoll-down {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
@@ -223,11 +223,13 @@ address  {
     color: #fff;
 }
 
-.scroll-down p:hover {
+.srcoll-down:hover {
     color: #fd9222;
 }
 
-.arrow-down:hover {}
+.arrow-down {
+    fill: currentColor;
+}
 /* #endregion */
 
 /* #region Benefits */
@@ -369,7 +371,7 @@ address  {
 .section-four .list-item {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
-    width: 270px;
+    width: calc((100% - 18px * 3) / 4);
     background-color: #fff;
     padding: 32px 20px;
     text-align: center;
@@ -559,7 +561,7 @@ address  {
 .footer {
     background-color: rgba(30, 24, 35, 1);
     color: #fff;
-    padding: 50px 32px;
+    padding: 50px 32px 0 32px;
 }
 
 .footer-top {
@@ -588,7 +590,7 @@ address  {
     gap: 50px;
 }
 .social-networks {
-
+    
 }
 
 .footer-text {
@@ -599,6 +601,8 @@ address  {
 }
 
 .socials {
+    display: flex;
+    flex-direction: row;
     gap: 14px;
 }
 
@@ -638,7 +642,6 @@ address  {
     width: 1136px;
     height: 0px;
     margin-top: 50px;
-    margin-bottom: 42px;
 }
 
 .footer-nav .list {
@@ -649,7 +652,10 @@ address  {
     gap: 24px;
 }
 
-.nav-link {}
+.footer .nav-link {
+    padding-top: 42px;
+    padding-bottom: 68px;
+}
 /* #endregion */
 
 /* #endregion */
