@@ -87,3 +87,54 @@ address {
 }
 
 /* #endregion */
+/* #region Ingridients */
+.section-two {
+    padding: 120px 0px 60px 0px;
+}
+
+.section-two .section-title {
+    width: 412px;
+}
+
+.section-two .list {
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.section-two .list-item {}
+
+.section-two .card {
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    width: 260px;
+    padding: 28px 23px;
+}
+
+.section-two .card-orange {
+    border: transparent;
+    background-color: #fd9222;
+}
+
+.section-two .card-dark {
+    border: transparent;
+    background-color: #1e1823;
+}
+
+.section-two .card-image {
+    display: block;
+    max-width: 100%;
+}
+
+.section-two .card-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    margin-top: 36px;
+}
+
+.section-two .card-title-white {
+    color: #fff;
+}
+
+/* #endregion */
