@@ -244,7 +244,7 @@ address  {
 }
 
 .section-one .list-item {
-    width: 308px;
+    width: calc((100% - 88px) / 3);
 }
 
 
@@ -269,34 +269,38 @@ address  {
 .section-two .section-title {
     width: 412px;
 }
+
 .section-two .list {
     flex-wrap: wrap;
     gap: 32px;
 }
 
 .section-two .list-item {
-}
-
-.section-two .card {
-    border: 1px solid #fd9222;
+    border: 1px solid transparent;
     border-radius: 15px;
-    width: 260px;
+    width: calc((100% - 96px) / 4);
     padding: 28px 23px;
 }
 
-.section-two .card-orange {
-    border: transparent;
+.section-two .list-item:nth-child(4n + 1) {
+    color: #fff;
     background-color: #fd9222;
 }
 
-.section-two .card-dark {
-    border: transparent;
-    background-color: #1e1823;
+.section-two .list-item:nth-child(2n + 2) {
+    color: #111;
+    background-color: #fff;
+    border-color: #fd9222;
 }
+
+.section-two .list-item:nth-child(4n + 3) {
+    color: #fff;
+    background-color: rgba(30, 24, 35, 1);
+}
+
 
 .section-two .card-image {
     display: block;
-    max-width: 100%;
 }
 
 .section-two .card-title {
@@ -307,9 +311,6 @@ address  {
     margin-top: 36px;
 }
 
-.section-two .card-title-white {
-    color: #fff;
-}
 
 /* #endregion */
 
@@ -406,18 +407,16 @@ address  {
 .section-five .section-title {}
 
 .section-five .list {
-    flex-wrap: wrap;
     gap: 16px;
-    /* justify-content: space-between; */
 }
 
-.section-five .list-item {}
-
-.section-five .card {
+.section-five .list-item {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
-    width: 368px;
+    width: calc((100% - 16px) / 3);
 }
+
+.section-five .card {}
 
 .section-five .card-image-box {
     overflow: hidden;
@@ -489,23 +488,20 @@ address  {
 }
 
 .section-six .list {
-    flex-wrap: wrap;
     gap: 28px;
-    /* justify-content: space-between; */
 }
 
-.section-six .list-item {}
-
-.section-six .card {
+.section-six .list-item {
     position: relative;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
-    width: 360px;
+    width: calc((100% - 28px) / 3);
     height: 200px;
     box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
     background-color: #fff;
-    padding: 24px;
-}
+    padding: 24px;}
+
+.section-six .card {} 
 
 .section-six .card-image {
     position: absolute;
@@ -622,7 +618,9 @@ address  {
 .address {}
 
 .address .list {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
 .contacts-link {
@@ -633,9 +631,6 @@ address  {
     text-align: left;
 }
 
-/* .contents-tel {
-    margin-bottom: 4px;
-} */
 
 .footer-line {
     border: 1px solid rgba(255, 255, 255, 0.1);
