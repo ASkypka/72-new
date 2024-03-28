@@ -1,0 +1,142 @@
+/* #region Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    background-color: #fafafa;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    color: currentColor;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    max-width: 1168px;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-span {
+    color: #fd9222;
+}
+
+.list {
+    display: flex;
+}
+
+.list-item {}
+
+.button {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    cursor: pointer;
+}
+
+.card {}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22222;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* #endregion */
+/* #region Ingridients */
+.section-two {
+    padding: 120px 0px 60px 0px;
+}
+
+.section-two .section-title {
+    width: 412px;
+}
+
+.section-two .list {
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.section-two .list-item {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: calc((100% - 96px) / 4);
+    padding: 28px 23px;
+}
+
+.section-two .list-item:nth-child(4n + 1) {
+    color: #fff;
+    background-color: #fd9222;
+}
+
+.section-two .list-item:nth-child(2n + 2) {
+    color: #111;
+    background-color: #fff;
+    border-color: #fd9222;
+}
+
+.section-two .list-item:nth-child(4n + 3) {
+    color: #fff;
+    background-color: rgba(30, 24, 35, 1);
+}
+
+
+.section-two .card-image {
+    display: block;
+    max-width: 100%;
+}
+
+.section-two .card-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    margin-top: 36px;
+}
+
+
+/* #endregion */
