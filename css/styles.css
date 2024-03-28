@@ -640,7 +640,7 @@ address {
 .address .list {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 4px;
 }
 
 .contacts-link {
