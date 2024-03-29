@@ -17,7 +17,7 @@
 
 <body>
     <!-- #region Sprite -->
-    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    <!-- <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <symbol id="icon-chocolate" viewBox="0 0 32 32">
@@ -52,7 +52,7 @@
                 </path>
             </symbol>
         </defs>
-    </svg>
+    </svg> -->
     <!-- #endregion -->
 
     <!-- #region Header -->
@@ -60,30 +60,34 @@
         <div class="container">
             <nav class="navigation">
                 <div class="home">
-                    <a href="#" class="home-link">SIMPLY<span class="home-link-span"> CHOCOLATE</span></a>
-                    <img src="./images/header/chocolate.svg" alt="simply chocolate logo" width="24" height="24"
-                        class="logo">
+                    <a href="#" class="home-link">SIMPLY<span class="home-link-span"> CHOCOLATE</span>
+                    </a>
+                    <svg width="24" height="24" class="logo">
+                        <use href="./images/icons.svg#icon-chocolate1"></use>
+                    </svg>
                 </div>
                 <div class="nav-menu">
                     <ul class="nav-list">
-                        <li class="nav-link"><a href="#">Home</a></li>
+                        <li class="nav-link nav-link-active"><a href="#">Home</a></li>
                         <li class="nav-link"><a href="#">How it&rsquo;s made?</a></li>
                         <li class="nav-link"><a href="#">Chocolate is loved</a></li>
                     </ul>
                     <ul class="socials">
                         <li class="socials-item">
-                            <a href="#"><svg class="icon icon-facebook" width="40px" height="40px">
-                                    <use xlink:href="#icon-icon-facebook"></use>
-                                </svg></a>
+                            <a href="#">
+                                <svg width="40" height="40" class="icon icon-facebook">
+                                    <use href="./images/icons.svg#icon-icon-facebook"></use>
+                                </svg>
+                            </a>
                         </li>
                         <li class="socials-item">
-                            <a href="#"><svg class="icon icon-instagram" width="40px" height="40px">
-                                    <use xlink:href="#icon-icon-instagram"></use>
+                            <a href="#"><svg class="icon icon-instagram" width="40" height="40">
+                                    <use href="./images/icons.svg#icon-icon-instagram"></use>
                                 </svg></a>
                         </li>
                         <li class="socials-item">
                             <a href="#"><svg class="icon icon-twitter" width="40px" height="40px">
-                                    <use xlink:href="#icon-icon-twitter"></use>
+                                    <use href="./images/icons.svg#icon-icon-twitter"></use>
                                 </svg></a>
                         </li>
                     </ul>
@@ -110,9 +114,11 @@
                     </ul>
                     <a href="#" class="srcoll-down">
                         scroll down
-                        <svg class="arrow-down" width="14" height="8">
-                            <use xlink:href="#arrow-down"></use>
-                        </svg>
+                        <span class="arrow-down-span">
+                            <svg class="arrow-down" width="20" height="20">
+                                <use href="./images/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </span>
                     </a>
                 </div>
             </div>
@@ -126,6 +132,11 @@
                 <ul class="list">
                     <li class="list-item">
                         <div class="card">
+                            <div class="benefits-icon-background">
+                                <svg width="32" height="32" class="icon icon-benefits">
+                                    <use href="./images/icons.svg#icon-chocolate"></use>
+                                </svg>
+                            </div>
                             <h2 class="card-title">Unsurpassed taste</h2>
                             <p class="card-text">Crafted with the finest quality cocoa beans and a dedication to
                                 perfection,
@@ -138,6 +149,12 @@
                     </li>
                     <li class="list-item">
                         <div class="card">
+                            <div class="benefits-icon-background">
+                                <svg width="32" height="32" class="icon icon-benefits">
+                                    <use href="./images/icons.svg#icon-coin"></use>
+                                </svg>
+                            </div>
+
                             <h2 class="card-title">Affordable price</h2>
                             <p class="card-text">Indulge in high-quality chocolate without breaking the bank with Simply
                                 Chocolate's selection of
@@ -150,6 +167,11 @@
                     </li>
                     <li class="list-item">
                         <div class="card">
+                            <div class="benefits-icon-background">
+                                <svg width="32" height="32" class="icon icon-benefits">
+                                    <use href="./images/icons.svg#icon-spoon"></use>
+                                </svg>
+                            </div>
                             <h2 class="card-title">Own production</h2>
                             <p class="card-text">We take pride in our own production process, ensuring that every step
                                 is
@@ -172,53 +194,60 @@
                     sensation</h2>
                 <ul class="list">
                     <li class="list-item">
-                        <div class="card card-orange">
-                            <img src="./images/ingridients/img-1.png" alt="a piece of milk chocolate" width="214"
-                                height="160" class="card-image">
-                            <h3 class="card-title card-title-white">MILK CHOCOLATE</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-1.png" alt="a piece of milk chocolate" width="214"
+                            height="160" class="card-image">
+                        <h3 class="card-title card-title-white">MILK CHOCOLATE</h3>
                     </li>
                     <li class="list-item">
-                        <div class="card">
-                            <img src="./images/ingridients/img-2.png" alt="a bottle of milk" width="214" height="160"
-                                class="card-image">
-                            <h3 class="card-title">MILK</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients icon-ingridients-orange">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-2.png" alt="a bottle of milk" width="214" height="160"
+                            class="card-image">
+                        <h3 class="card-title">MILK</h3>
                     </li>
                     <li class="list-item">
-                        <div class="card card-dark">
-                            <img src="./images/ingridients/img-3.png" alt="hazelnuts" width="214" height="160"
-                                class="card-image">
-                            <h3 class="card-title card-title-white">NUTS</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-3.png" alt="hazelnuts" width="214" height="160"
+                            class="card-image">
+                        <h3 class="card-title card-title-white">NUTS</h3>
                     </li>
                     <li class="list-item">
-                        <div class="card">
-                            <img src="./images/ingridients/img-4.png" alt="chocolate drops" width="214" height="160"
-                                class="card-image">
-                            <h3 class="card-title">SEMI - SWEET CHOCOLATE</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients icon-ingridients-orange">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-4.png" alt="chocolate drops" width="214" height="160"
+                            class="card-image">
+                        <h3 class="card-title">SEMI - SWEET CHOCOLATE</h3>
                     </li>
                     <li class="list-item">
-                        <div class="card card-orange">
-                            <img src="./images/ingridients/img-5.png" alt="cocoa beans" width="214" height="160"
-                                class="card-image">
-                            <h3 class="card-title card-title-white">CACAO</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-5.png" alt="cocoa beans" width="214" height="160"
+                            class="card-image">
+                        <h3 class="card-title card-title-white">CACAO</h3>
                     </li>
                     <li class="list-item">
-                        <div class="card">
-                            <img src="./images/ingridients/img-6.png" alt="raspberries" width="214" height="160"
-                                class="card-image">
-                            <h3 class="card-title">RASPBERRY</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients icon-ingridients-orange">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-6.png" alt="raspberries" width="214" height="160"
+                            class="card-image">
+                        <h3 class="card-title">RASPBERRY</h3>
                     </li>
                     <li class="list-item">
-                        <div class="card card-dark">
-                            <img src="./images/ingridients/img-7.png" alt="coconut" width="214" height="160"
-                                class="card-image">
-                            <h3 class="card-title card-title-white">COCONUT OIL</h3>
-                        </div>
+                        <svg width="24" height="24" class="icon-ingridients">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <img src="./images/ingridients/img-7.png" alt="coconut" width="214" height="160"
+                            class="card-image">
+                        <h3 class="card-title card-title-white">COCONUT OIL</h3>
                     </li>
                 </ul>
             </div>
@@ -366,17 +395,15 @@
                     <li class="list-item">
                         <div class="card">
                             <div class="card-image-box">
-                                <div class="top-sellers-overlay">
-                                    <p class="overlay-text">
-                                        Chocolate with nuts is a delectable combination that brings together the
-                                        smoothness
-                                        of chocolate and the crunchiness of
-                                        nuts. Whether it's milk chocolate, dark chocolate, or white chocolate, the
-                                        addition
-                                        of nuts adds a whole new dimension
-                                        of flavor and texture.
-                                    </p>
-                                </div>
+                                <p class="overlay-text">
+                                    Chocolate with nuts is a delectable combination that brings together the
+                                    smoothness
+                                    of chocolate and the crunchiness of
+                                    nuts. Whether it's milk chocolate, dark chocolate, or white chocolate, the
+                                    addition
+                                    of nuts adds a whole new dimension
+                                    of flavor and texture.
+                                </p>
                                 <img src="./images/top-sellers/img-1.jpg" alt="CHOCOLATE WITH NUTS" width="368"
                                     height="464" class="card-image">
                             </div>
@@ -388,14 +415,12 @@
                     <li class="list-item">
                         <div class="card">
                             <div class="card-image-box">
-                                <div class="top-sellers-overlay">
-                                    <p class="overlay-text">
-                                        Chocolate with fruit is an unbeatable combination of two of the tastiest things
-                                        in the world. This dessert combines
-                                        delicate and aromatic chocolate with fresh and juicy fruits, creating a true
-                                        poetry of taste.
-                                    </p>
-                                </div>
+                                <p class="overlay-text">
+                                    Chocolate with fruit is an unbeatable combination of two of the tastiest things
+                                    in the world. This dessert combines
+                                    delicate and aromatic chocolate with fresh and juicy fruits, creating a true
+                                    poetry of taste.
+                                </p>
                                 <img src="./images/top-sellers/img-2.jpg" alt="CHOCOLATE WITH FRUITS" width="368"
                                     height="464" class="card-image">
                             </div>
@@ -407,15 +432,13 @@
                     <li class="list-item">
                         <div class="card">
                             <div class="card-image-box">
-                                <div class="top-sellers-overlay">
-                                    <p class="overlay-text">
-                                        Dark chocolate is a rich and indulgent treat that is beloved by many chocolate
-                                        enthusiasts. It is made from cocoa beans,
-                                        which are roasted, ground, and then processed to produce chocolate liquor. Dark
-                                        chocolate contains a higher percentage
-                                        of cocoa solids compared to milk chocolate.
-                                    </p>
-                                </div>
+                                <p class="overlay-text">
+                                    Dark chocolate is a rich and indulgent treat that is beloved by many chocolate
+                                    enthusiasts. It is made from cocoa beans,
+                                    which are roasted, ground, and then processed to produce chocolate liquor. Dark
+                                    chocolate contains a higher percentage
+                                    of cocoa solids compared to milk chocolate.
+                                </p>
                                 <img src="./images/top-sellers/img-3.jpg" alt="DARK CHOCOLATE" width="368" height="464"
                                     class="card-image">
                             </div>
@@ -484,19 +507,19 @@
                         <p class="footer-text">Social networks</p>
                         <ul class="socials">
                             <li class="socials-item">
-                                <a href=""><svg class="icon icon-facebook" width="40px" height="40px">
-                                        <use xlink:href="#icon-icon-facebook"></use>
+                                <a href=""><svg class="icon icon-facebook" width="40" height="40">
+                                        <use href="./images/icons.svg#icon-icon-facebook"></use>
                                     </svg></a>
                             </li>
                             <li class="socials-item">
-                                <a href=""><svg class="icon icon-instagram" width="40px" height="40px">
-                                        <use xlink:href="#icon-icon-instagram"></use>
+                                <a href=""><svg class="icon icon-instagram" width="40" height="40">
+                                        <use href="./images/icons.svg#icon-icon-instagram"></use>
                                     </svg></a>
                             </li>
                             <li class="socials-item">
                                 <a href="">
-                                    <svg class="icon icon-twitter" width="40px" height="40px">
-                                        <use xlink:href="#icon-icon-twitter"></use>
+                                    <svg class="icon icon-twitter" width="40" height="40">
+                                        <use href="./images/icons.svg#icon-icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -525,6 +548,7 @@
             </div>
         </div>
     </footer>
+    <!-- #endregion -->
 </body>
 <!-- #endregion -->
 

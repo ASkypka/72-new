@@ -157,6 +157,9 @@ address {
 
 .icon {
     display: inline-block;
+}
+
+.header .icon {
     padding: 8px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 10px;
@@ -177,14 +180,17 @@ address {
 /* #region Hero section */
 .hero-section {
     background-color: rgba(17, 17, 17, 0.4);
-    padding-top: 381px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
+    max-width: 1168;
+    padding: 381px 40px 40px 40px;
     border-radius: 30px;
-    margin-bottom: 80px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 0 32px 80px 32px;
+    background-image: 
+    linear-gradient(to bottom,
+            rgba(17, 17, 17, 0.4),
+            rgba(17, 17, 17, 0.4)),
+    url(../images/hero/herobg.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title {
@@ -247,7 +253,25 @@ address {
 }
 
 .arrow-down {
-    fill: currentColor;
+    fill: #fd9222;
+}
+
+.arrow-down:hover {
+    fill: #fff;
+}
+
+.arrow-down-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.arrow-down-span:hover {
+    background-color: #fd9222;
 }
 
 /* #endregion */
@@ -264,9 +288,32 @@ address {
 }
 
 .section-one .list-item {
+    display: flex;
     width: calc((100% - 88px) / 3);
 }
 
+.section-one .list-item:not(:last-child)::after {
+    content: "";
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 0px;
+    height: 124px;
+    top: 63px;
+    right: -44px;
+}
+
+.benefits-icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    margin-bottom: 22px;
+}
+
+.icon .icon-benefits {}
 
 .section-one .card-title {
     font-weight: 600;
@@ -297,11 +344,17 @@ address {
 }
 
 .section-two .list-item {
+    display: flex;
+    flex-direction: column;
     border: 1px solid transparent;
     border-radius: 15px;
     width: calc((100% - 96px) / 4);
     padding: 28px 23px;
 }
+
+/* .icon-ingridients-orange {
+    fill: #fd9222;
+} */
 
 .section-two .list-item:nth-child(4n + 1) {
     color: #fff;
@@ -473,10 +526,6 @@ address {
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: #fff;
-    width: 288px;
-}
-
-.top-sellers-overlay {
     border-radius: 15px 15px 0 0;
     position: absolute;
     top: 0;
@@ -490,7 +539,7 @@ address {
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
 }
-.card-image-box:hover .top-sellers-overlay {
+.card-image-box:hover .overlay-text {
     transform: translateY(0);
 }
 
