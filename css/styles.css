@@ -12,6 +12,7 @@ body {
 }
 
 a {
+    display: block;
     color: currentColor;
     text-decoration: none;
 }
@@ -446,6 +447,16 @@ address {
     width: 368px;
 }
 
+.overlay-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #fff;
+    width: 288px;
+}
+
 .top-sellers-overlay {
     border-radius: 15px 15px 0 0;
     position: absolute;
@@ -460,17 +471,6 @@ address {
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
 }
-
-.overlay-text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    color: #fff;
-    width: 288px;
-}
-
 .card-image-box:hover .top-sellers-overlay {
     transform: translateY(0);
 }
