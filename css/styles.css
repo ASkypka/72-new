@@ -344,7 +344,6 @@ address {
 
 .recipe {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 20px;
 }
 
@@ -372,7 +371,27 @@ address {
     margin-bottom: 24px;
 }
 
-.section-three .list-item::before {}
+.section-three .list-item {
+    display: flex;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #111;
+
+}
+
+.section-three .list-item::before {
+    content: "";
+    flex-shrink: 0;
+    margin-top: 5px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(236, 237, 237, 1);
+    border-radius: 50%;
+    background-color: #4c4c4c;
+}
 
 /* #endregion */
 
