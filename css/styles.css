@@ -97,6 +97,7 @@ address {
 
 .navigation {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
 
@@ -238,9 +239,6 @@ address {
     flex-direction: row;
     align-items: center;
     gap: 14px;
-}
-
-.srcoll-down {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
@@ -290,15 +288,17 @@ address {
 .section-one .list-item {
     display: flex;
     width: calc((100% - 88px) / 3);
+    position: relative;
 }
 
 .section-one .list-item:not(:last-child)::after {
     content: "";
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    width: 0px;
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1px;
     height: 124px;
-    top: 63px;
+    top: calc(50% - 62px);
     right: -44px;
 }
 
@@ -350,11 +350,19 @@ address {
     border-radius: 15px;
     width: calc((100% - 96px) / 4);
     padding: 28px 23px;
+    position: relative;
 }
 
-/* .icon-ingridients-orange {
-    fill: #fd9222;
-} */
+.icon-ingridients {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    stroke: #fff;
+}
+
+.section-two .list-item:nth-child(even) .icon-ingridients {
+    stroke: #fd9222;
+}
 
 .section-two .list-item:nth-child(4n + 1) {
     color: #fff;
@@ -401,7 +409,14 @@ address {
 }
 
 .recipe-image {
+    position: relative;
     flex-shrink: 0;
+}
+
+.icon-play {
+    position: absolute;
+    top: 178px;
+    left: 278px;
 }
 
 .recipe-caption {
@@ -584,7 +599,7 @@ address {
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     width: calc((100% - 28px) / 3);
-    height: 200px;
+    min-height: 200px;
     box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
     background-color: #fff;
     padding: 24px;
@@ -594,8 +609,8 @@ address {
 
 .section-six .card-image {
     position: absolute;
-    left: 140px;
-    bottom: 162px;
+    left: calc(50% - 40px);
+    bottom: calc(110% - 40px);
     display: block;
     margin: 0 auto;
 }
@@ -616,7 +631,7 @@ address {
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
-    width: 312px;
+    max-width: 312px;
 }
 
 .section-six .button-black {
